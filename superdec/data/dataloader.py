@@ -6,7 +6,6 @@ import torch
 from torch.utils.data import Dataset
 
 from superdec.data.transform import RotateAroundAxis3d, Scale3d, RandomMove3d, Compose, rotate_around_axis
-import open3d as o3d
 
 SHAPENET_CATEGORIES = {
     "04379243": "table", "02958343": "car", "03001627": "chair", "02691156": "airplane",
@@ -109,6 +108,7 @@ class ScenesDataset(Dataset):
 
         if n_points >= 4096:
             if self.fps:
+                import open3d as o3d  # lazy: only the optional FPS path needs it
                 pcd = o3d.geometry.PointCloud()
                 pcd.points = o3d.utility.Vector3dVector(points_tmp)
                 points = np.asarray(pcd.farthest_point_down_sample(4096).points)
