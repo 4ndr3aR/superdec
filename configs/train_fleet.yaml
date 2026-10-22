@@ -102,7 +102,10 @@ scheduler:
   _target_: torch.optim.lr_scheduler.OneCycleLR
   max_lr: ${optimizer.lr}
   epochs: ${trainer.num_epochs}
-  steps_per_epoch: -1
+  steps_per_epoch: 235   # 7497 train objects / bs32 (ceil). torch 2.9 OneCycleLR no longer accepts
+                         # the old -1 sentinel; the stock train.py overwrites this with len(loader)
+                         # at build time, but a self-consistent value keeps direct/hydra instantiation
+                         # (and resume) from raising ValueError.
 
 loss:
   n_samples: 500
