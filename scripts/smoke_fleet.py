@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 
 from superdec.superdec import SuperDec
-from superdec.data.dataloader import ShapeNet
+from superdec.data.dataloader import ShapeNet, ShapeNetXZ
 from superdec.loss.loss import Loss
 
 
@@ -46,8 +46,8 @@ def main():
           f"params={n_params/1e6:.2f}M  (n_queries={cfg.superdec.decoder.n_queries}, "
           f"emb={model.emb_dims}, enc out={cfg.superdec.point_encoder.out_channels})")
 
-    ds = ShapeNet(split="train", cfg=cfg)
-    print(f"[smoke] dataset: {len(ds)} objects")
+    ds = (ShapeNetXZ if cfg.dataset == 'xzfleet' else ShapeNet)(split="train", cfg=cfg)
+    print(f"[smoke] dataset: dataset={cfg.dataset}  {len(ds)} object clouds")
     ld = torch.utils.data.DataLoader(ds, batch_size=(args.bs or cfg.trainer.batch_size), shuffle=True,
                                      num_workers=0, drop_last=(args.bs or cfg.trainer.batch_size) > 1)
     loss_fn = Loss(cfg.loss).cuda()
