@@ -1,0 +1,26 @@
+[fast] val objects=833
+[fast] viz: box=0, capsule=119, cone=238, cylinder=357, pyramid=476, sphere=595, torus=714
+[fast] e30 val_cub=0.007114 overallCD=0.08002 | box=0.0943 sphere=0.0608 torus=0.0947 cone=0.0916 capsule=0.0518 cylinder=0.0817 pyramid=0.0852
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e30.png
+[fast] e40 val_cub=0.007217 overallCD=0.07892 | box=0.0952 sphere=0.0619 torus=0.0920 cone=0.0898 capsule=0.0449 cylinder=0.0793 pyramid=0.0895
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e40.png
+[fast] e50 val_cub=0.007166 overallCD=0.07670 | box=0.0954 sphere=0.0591 torus=0.0900 cone=0.0856 capsule=0.0397 cylinder=0.0798 pyramid=0.0872
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e50.png
+[fast] e60 val_cub=0.006938 overallCD=0.07590 | box=0.0927 sphere=0.0580 torus=0.0922 cone=0.0873 capsule=0.0363 cylinder=0.0763 pyramid=0.0885
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e60.png
+[fast] e70 val_cub=0.006959 overallCD=0.07588 | box=0.0949 sphere=0.0573 torus=0.0923 cone=0.0861 capsule=0.0347 cylinder=0.0774 pyramid=0.0886
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e70.png
+[fast] e80 val_cub=0.006925 overallCD=0.07586 | box=0.0958 sphere=0.0574 torus=0.0915 cone=0.0860 capsule=0.0344 cylinder=0.0777 pyramid=0.0883
+[fast] saved /mnt/shared/superdec-pngs/fleet_recon_e80.png
+[fast] saved /mnt/shared/superdec-pngs/fleet_curves.png
+
+=== FINAL (e80) val Chamfer per class ===
+  box       0.09582
+  sphere    0.05737
+  torus     0.09149
+  cone      0.08604
+  capsule   0.03439
+  cylinder  0.07766
+  pyramid   0.08829
+  OVERALL   0.07586
+[fast] DONE

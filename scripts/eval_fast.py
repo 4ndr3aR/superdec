@@ -109,7 +109,7 @@ def main():
             gt, surf = vizout[viz[c]][1], vizout[viz[c]][2]
             gi.scatter(gt[:, 0], gt[:, 2], gt[:, 1], s=0.6, c="#888888")
             si = surf[::max(1, len(surf) // 4000)]
-            gi.scatter(si[:, 0], si[:, 2], si[:, 1], s=0.9, c="#d62728", alpha=0.6)
+            gi.scatter(si[:, 0], si[:, 2], si[:, 1], s=4.5, c="#d62728", alpha=0.8)
             gi.set_title(f"{c}  cd={np.mean(per_c[c]):.4f}", fontsize=9)
             gi.set_box_aspect((1, 1, 1))
         fig.text(0.985, 0.012,
