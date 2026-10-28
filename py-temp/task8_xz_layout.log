@@ -1,0 +1,19 @@
+train: 2320 scenes, 7098 objects, 0 missing-bundle
+val  : 270 scenes, 821 objects, 0 missing-bundle
+test : 140 scenes, 411 objects, 0 missing-bundle
+
+== scene_randx64_0700  n_obj=3
+   keys: ['H_nat', 'K_native', 'T_wc_cam', 'W_nat', 'n_obj', 'obj_0_name', 'obj_0_sil', 'obj_0_silcnts', 'obj_0_surface_pts', 'obj_1_name', 'obj_1_sil', 'obj_1_silcnts', 'obj_1_surface_pts', 'obj_2_name', 'obj_2_sil', 'obj_2_silcnts', 'obj_2_surface_pts', 'obj_fgpx_counts', 'obj_shape_sem', 'obj_world_pose', 'schema', 'shape_multihot']
+   obj_0_surface_pts: shape=(4096, 3) mean=[0.0, -0.0, -0.004000000189989805] absmax=0.322
+   obj_1_surface_pts: shape=(4096, 3) mean=[0.0, 0.0010000000474974513, -0.0020000000949949026] absmax=0.322
+   obj_2_surface_pts: shape=(4096, 3) mean=[-0.0010000000474974513, 0.0020000000949949026, -0.16899999976158142] absmax=0.322
+   POSE obj_world_pose: shape=(40, 3, 16)
+   obj_0 surface: mean=[0.0, -0.0, -0.004000000189989805] std=[0.23999999463558197, 0.23899999260902405, 0.24199999868869781] absmax per-axis=[0.32199999690055847, 0.32199999690055847, 0.32199999690055847]
+
+== scene_randx64_0000  n_obj=1
+   keys: ['H_nat', 'K_native', 'T_wc_cam', 'W_nat', 'n_obj', 'obj_0_name', 'obj_0_sil', 'obj_0_silcnts', 'obj_0_surface_pts', 'obj_fgpx_counts', 'obj_shape_sem', 'obj_world_pose', 'schema', 'shape_multihot']
+   obj_0_surface_pts: shape=(4096, 3) mean=[0.0, -0.0, -0.007000000216066837] absmax=0.500
+   POSE obj_world_pose: shape=(40, 1, 16)
+   obj_0 surface: mean=[0.0, -0.0, -0.007000000216066837] std=[0.37299999594688416, 0.3709999918937683, 0.375] absmax per-axis=[0.5, 0.5, 0.5]
+
+DONE

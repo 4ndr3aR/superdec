@@ -1,0 +1,6 @@
+[smoke] model built in 0s (incl. first CUDA JIT compile). params=0.28M  (n_queries=4, emb=32, enc out=32)
+ShapeNetXZ[train]: 2320 scenes -> 7098 object clouds (raw .xz, per-object regime)
+[smoke] dataset: dataset=xzfleet  7098 object clouds
+[smoke] batch0: loss=2.0657 cd=1.3135 cub=0.7229 exist=0.4268 sps=0.2504 expected_prim=2.62
+[smoke] batch0 out shapes: scale=(8, 4, 3) shape=(8, 4, 2) rotate=(8, 4, 3, 3) trans=(8, 4, 3) exist=(8, 4, 1) assign_matrix=(8, 4096, 4)
+[smoke] PASS: 6 batches finite forward+loss +backward peak_gpu=4.00GB

@@ -1,0 +1,2 @@
+[run_xz] Mon Oct 26 23:18:38 UTC 2026 LAUNCH bs=32 -> /mnt/shared/ubuntu-sidecar-pod/superdec/logs/superdec_fleet_xz.log
+[run_xz] exit rc=0 at Tue Oct 27 04:35:11 UTC 2026
